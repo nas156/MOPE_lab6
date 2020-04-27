@@ -17,8 +17,6 @@ class LabSix():
         self.detXi = [self.get_detX(self.X0i[0], self.X1_range[1]), self.get_detX(self.X0i[1], self.X2_range[1]), self.get_detX(self.X0i[2], self.X3_range[1])]
         self.Xcp_min = self.get_average([self.X1_range[0]+ self.X2_range[0]+self.X3_range[0]])
         self.Xcp_max = self.get_average([self.X1_range[1]+ self.X2_range[1]+self.X3_range[1]])
-        self.Y_min = 200 + self.Xcp_min
-        self.Y_max = 200 + self.Xcp_max
         self.l = 1.73
         self.X1_norm = [-1, -1, -1, -1, 1, 1, 1, 1, -self.l, self.l, 0, 0, 0, 0, 0]
         self.X2_norm = [-1, -1, 1, 1, -1, -1, 1, 1, 0, 0, -self.l, self.l, 0, 0, 0]
