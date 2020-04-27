@@ -9,9 +9,9 @@ class LabSix():
         self.m = m
         self.P = p
         self.k = 3
-        self.X1_range = [-5, 5]
-        self.X2_range = [-5, 6]
-        self.X3_range = [-4, 8]
+        self.X1_range = [15, 45]
+        self.X2_range = [15, 50]
+        self.X3_range = [15, 30]
         self.X_ranges = [self.X1_range, self.X2_range, self.X3_range]
         self.X0i = [self.get_x0(i) for i in self.X_ranges]
         self.detXi = [self.get_detX(self.X0i[0], self.X1_range[1]), self.get_detX(self.X0i[1], self.X2_range[1]), self.get_detX(self.X0i[2], self.X3_range[1])]
